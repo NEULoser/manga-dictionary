@@ -1,0 +1,4 @@
+downloads/
+artifacts/test-profile/
+artifacts/browser-profile/
+*.log

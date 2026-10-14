@@ -1,0 +1,8 @@
+{
+  "name": "manga-reader-offline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"build:dictionaries": "node tools/build.mjs", "test": "node tests/unit.mjs", "verify:resources": "node tools/verify-resources.mjs"},
+  "engines": {"node": ">=20"}
+}

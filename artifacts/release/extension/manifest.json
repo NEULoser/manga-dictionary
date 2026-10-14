@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "漫画伴读 · 离线查词",
+  "version": "0.1.0",
+  "description": "框选漫画图片，本地识别日语和英语，离线查看简体中文释义。",
+  "minimum_chrome_version": "116",
+  "permissions": ["activeTab", "scripting", "storage", "offscreen"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "漫画伴读：开启框选"},
+  "commands": {"select-region": {"suggested_key": {"default": "Alt+Shift+D"}, "description": "开启漫画框选"}},
+  "content_security_policy": {"extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; connect-src 'self'"}
+}

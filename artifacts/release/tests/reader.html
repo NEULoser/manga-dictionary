@@ -1,0 +1,8 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>漫画伴读验收页</title>
+<style>body{background:#e8eee9;font:16px system-ui;margin:24px;color:#254033}main{max-width:1000px;margin:auto}canvas{display:block;background:white;border:1px solid #888;margin:20px 0;max-width:100%;height:auto}h1{font-size:24px}p{line-height:1.8}</style>
+<main><h1>漫画伴读 · 本地验收页</h1><p>点击扩展图标，选择语言和排版，再框选下面图片。文字画在 Canvas 上，无法直接划选。日语点击“食べ”应查询原形“食べる”，英语点击 beautiful 应出现中文释义。</p><canvas id="english" width="760" height="260"></canvas><canvas id="japanese" width="760" height="450"></canvas><p>识别错误时，修改原文并点“重新分词”。小框／Esc／弹窗切侧栏／断网查词均可在此验收。</p></main>
+<script>
+const en=document.getElementById('english').getContext('2d');en.fillStyle='white';en.fillRect(0,0,760,260);en.strokeStyle='#222';en.lineWidth=2;en.strokeRect(25,25,710,210);en.fillStyle='#111';en.font='36px Arial';en.fillText('I found a beautiful book.',60,110);en.fillText('We went to school yesterday.',60,170);
+const ja=document.getElementById('japanese').getContext('2d');ja.fillStyle='white';ja.fillRect(0,0,760,450);ja.strokeStyle='#222';ja.lineWidth=2;ja.strokeRect(320,25,410,395);ja.fillStyle='#111';ja.font='38px "Yu Gothic","MS Gothic",sans-serif';
+for(const [col,text] of ['昨日','学校で','食べました'].entries())for(const [row,char] of [...text].entries())ja.fillText(char,640-col*100,90+row*48);
+</script></html>

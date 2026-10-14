@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "browser": "155.0.8059.39",
+  "englishText": "| found a beautiful book. We went to school yesterday.",
+  "japaneseText": "昨日学校で食べました",
+  "checks": [
+    "real action / activeTab permission",
+    "captureVisibleTab region crop",
+    "English OCR and definitions",
+    "irregular English lemma",
+    "edited text invalidates tokens",
+    "line-break normalization",
+    "missing dictionary result",
+    "cold offline vertical Japanese OCR",
+    "Japanese base form / reading / part of speech",
+    "sidebar toggle",
+    "small-region error",
+    "Escape and clear",
+    "preferences-only storage"
+  ],
+  "screenshots": [
+    "artifacts/english-lookup.png",
+    "artifacts/japanese-lookup.png"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checks": "JS syntax, OCR text normalization, crop validation, kana conversion, English tokenization, dictionary coverage/lemmas, permissions, model integrity",
+  "dictionaryCounts": {
+    "ja": 107297,
+    "en": 58226
+  }
+}
